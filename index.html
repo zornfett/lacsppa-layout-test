@@ -3,89 +3,179 @@
 	<head>
 	<meta charset="utf-8">
 	<title>appscal > layout-test</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
-	<meta name="author" content="">
-
+	<meta name="author" content="RBB2">
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	<style>
 
 	</style>
-
 	<link rel="shortcut icon" href="../assets/ico/favicon.png">
 	</head>
 	<body>
+	<div class="wrapper">
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+			<a class="navbar-brand" href="#">Navbar</a>
+            <!-- side-burger -->
+            <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <i class="fas fa-align-left"></i>
+                <span>Sidebar</span>
+            </button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="#">Action</a>
+							<a class="dropdown-item" href="#">Another action</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">Something else here</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link disabled" href="#">Disabled</a>
+					</li>
+				</ul>
+				<!-- topnav SEARCH -->
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>
+			</div>
+		</nav>
 
-	<!-- 	<div class="container">
-			<h1>TKTKTKTKTKTKTKTKTK</h1>
-			<p>TKTKTKTKTKTKTKTKTK</p>
+	<!-- Sidebar -->
+	<nav id="sidebar">
+		<ul class="list-unstyled components">
+			<li class="active">
+				<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+				<ul class="collapse list-unstyled" id="homeSubmenu">
+					<li>
+						<a href="#">Home 1</a>
+					</li>
+					<li>
+						<a href="#">Home 2</a>
+					</li>
+					<li>
+						<a href="#">Home 3</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">About</a>
+			</li>
+			<li>
+				<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+				<ul class="collapse list-unstyled" id="pageSubmenu">
+					<li>
+						<a href="#">Page 1</a>
+					</li>
+					<li>
+						<a href="#">Page 2</a>
+					</li>
+					<li>
+						<a href="#">Page 3</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				<a href="#">Portfolio</a>
+			</li>
+			<li>
+				<a href="#">Contact</a>
+			</li>
+		</ul>
+	</nav>
+
+</div>
+		<!-- Nav tabs
+		<ul class="nav nav-tabs" id="myTab" role="tablist">
+			<li class="nav-item">
+				<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="messages-tab" data-toggle="tab" href="#messages" role="tab" aria-controls="messages" aria-selected="false">Messages</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" id="settings-tab" data-toggle="tab" href="#settings" role="tab" aria-controls="settings" aria-selected="false">Settings</a>
+			</li>
+		</ul>
+	-->
+		<!-- VERT nav
+	<nav class="nav flex-column">
+	<a class="nav-link active" href="#">Active</a>
+	<a class="nav-link" href="#">Link</a>
+	<a class="nav-link" href="#">Link</a>
+	<a class="nav-link disabled" href="#">Disabled</a>
+	</nav>
+
+		<div class="container vert-nav">
+			<ul class="nav flex-column">
+				<li class="nav-item">
+					<a class="nav-link active" href="#">Active</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Link</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
 		</div> -->
-
-	<div class="container">
-		<div class="row">
-			<table class="table table-striped"><!-- table-bordered -->
-				<thead class="thead-dark">
-					<tr>
-						<th scope="col">TKheaderTKT</th>
-						<th scope="col">TKTKT</th>
-						<th scope="col">TKTKT</th>
-						<th scope="col">TKTKT</th>
-					</tr>
-				</thead>
-	<!-- 			<tbody class="XXX">
-					<tr>
-						<th scope="col">TKbodyTKT</td>
-						<td scope="col">TKTKT</td>
-						<td scope="col">TKTKT</th>
-						<td scope="col">TKTKT</td>
-					</tr>
-				</tbody>
-				<tbody class="XXX">
-					<tr>
-						<th scope="col">TKTKT</td>
-						<td scope="col">TKTKT</td>
-						<td scope="col">TKTKT</th>
-						<td scope="col">TKTKT</td>
-					</tr>
-				</tbody>
-				<tbody class="XXX">
-					<tr>
-						<th scope="col">TKTKT</td>
-						<td scope="col">TKTKT</td>
-						<td scope="col">TKTKT</th>
-						<td scope="col">TKTKT</td>
-					</tr>
-				</tbody> -->	
-				<tbody>
-					<tr>
-						<th scope="row">TKbodyTKT</td>
-						<td>TKTKT</td>
-						<td>TKTKT</td>
-						<td>TKTKT</td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<th scope="row">scope="row"</td>
-						<td>TKTKT</td>
-						<td>TKTKT</td>
-						<td>TKTKT</td>
-					</tr>
-				</tbody>
-				<tbody>
-					<tr>
-						<th scope="row">TKTKT</td>
-						<td>TKTKT</td>
-						<td>TKTKT</td>
-						<td>TKTKT</td>
-					</tr>
-				</tbody>	
-			</table>
-		</div>
-	</div>	
-
-	<!-- lanterman.org uses this six-year-old version-->
+		<div class="container card-section" style="outline: 1px dotted red;">
+			<div class="row">
+				<div class="card">
+					<div class="card-header">
+						cardheader
+					</div>
+					<div class="card-body">
+						cardbody
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						cardheader
+					</div>
+					<div class="card-body">
+						cardbody
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						cardheader
+					</div>
+					<div class="card-body">
+						cardbody
+					</div>
+				</div>
+				<div class="card">
+					<div class="card-header">
+						cardheader
+					</div>
+					<div class="card-body">
+						cardbody
+					</div>
+				</div>
+			</div>
+		</div>	
+	</div>
 	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
@@ -107,5 +197,65 @@ https://getbootstrap.com/docs/4.0/content/tables/
 - https://getbootstrap.com/docs/4.4/content/reboot/
 
 - XXX
+
+
+<table class="table table-striped"><!-- table-bordered
+	<thead class="thead-dark">
+		<tr>
+			<th scope="col">TKheaderTKT</th>
+			<th scope="col">TKTKT</th>
+			<th scope="col">TKTKT</th>
+			<th scope="col">TKTKT</th>
+		</tr>
+	</thead>
+		<tbody class="XXX">
+		<tr>
+			<th scope="col">TKbodyTKT</td>
+			<td scope="col">TKTKT</td>
+			<td scope="col">TKTKT</th>
+			<td scope="col">TKTKT</td>
+		</tr>
+	</tbody>
+	<tbody class="XXX">
+		<tr>
+			<th scope="col">TKTKT</td>
+			<td scope="col">TKTKT</td>
+			<td scope="col">TKTKT</th>
+			<td scope="col">TKTKT</td>
+		</tr>
+	</tbody>
+	<tbody class="XXX">
+		<tr>
+			<th scope="col">TKTKT</td>
+			<td scope="col">TKTKT</td>
+			<td scope="col">TKTKT</th>
+			<td scope="col">TKTKT</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th scope="row">TKbodyTKT</td>
+			<td>TKTKT</td>
+			<td>TKTKT</td>
+			<td>TKTKT</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th scope="row">scope="row"</td>
+			<td>TKTKT</td>
+			<td>TKTKT</td>
+			<td>TKTKT</td>
+		</tr>
+	</tbody>
+	<tbody>
+		<tr>
+			<th scope="row">TKTKT</td>
+			<td>TKTKT</td>
+			<td>TKTKT</td>
+			<td>TKTKT</td>
+		</tr>
+	</tbody>	
+</table>
 
  -->
