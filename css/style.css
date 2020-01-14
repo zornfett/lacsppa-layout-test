@@ -1,24 +1,36 @@
 .wrapper {
-	/*display: flex;*/
-	width: 100%;
+	/*display: flex;
+	width: 100%;*/
 	align-items: stretch;
 }
 
 .navbar {
 	width: 100%;
-	margin-top: 0 !important;
+	padding-top: 0 !important;
+}
+
+nav li span {
+	font-size: .5em;
+}
+
+a.nav-link {
+	color: #007bff !important;
+	font-size: 1em;
 }
 
 #sidebar {
-	min-width: 24%;
-	max-width: 24%;
-	padding-left: .5em;
-
+	width: 15%;
+	padding: 1em;
 	transition: all 0.3s;
 }
 
 #sidebar.active {
 	margin-left: -250px;
+}
+
+button#sidebarCollapse {
+	background-color: #3F729B;
+	color: #fff;
 }
 
 .dropdown-toggle::after {
@@ -36,6 +48,7 @@ a[data-toggle="collapse"] {
 	right: 20px;
 	transform: translateY(-50%);
 }
+
 .logo img {
 	width: 60%;
 }
@@ -43,9 +56,9 @@ a[data-toggle="collapse"] {
 .card-section {
 	/*width: 79%;*/
 }
-.card {
-	/*display: none;*/
 
+.card {
+	display: none;
 	width: 31%;
 	margin: 0 1em 1em 0;
 	border: none;
@@ -70,19 +83,35 @@ a[data-toggle="collapse"] {
   cursor: pointer;
 }
 
+.visible {
+	display: block;
+}
+
 @media (max-width: 768px) {
 	#sidebar {
 		margin-left: -250px;
 	}
+
 	#sidebar.active {
 		margin-left: 0;
 	}
+
+	.wrapper,
+	nav,
+	#sidebar,
+	.card-section {
+		outline: 2px dotted orange;
+	}
 }
 
+/* !! dummy styles !! */
+.wrapper,
+.navbar,
+.card-section {
+	outline: 2px dotted #666;
+}
+#sidebar {
+	border-right: 2px dotted #666;
+}
+/*div { outline: 1px dotted green; }*/
 
-/* NOTES
-
-https://developer.mozilla.org/en-US/docs/Web/CSS/flex
-https://bootstrapious.com/p/bootstrap-sidebar
-
-*/

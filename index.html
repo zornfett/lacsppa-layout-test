@@ -15,22 +15,29 @@
 	<body>
 	<div class="wrapper">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a href="#" class="logo"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>
-            <!-- side-burger -->
-            <button id="sidebarCollapse" class="btn btn-info navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-content" aria-controls="sidenav-content" aria-expanded="false" aria-label="Toggle navigation">
-                <i class="fas fa-align-left"></i>
-                <span>Sidebar</span>
-            </button>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-content" aria-controls="topnav-content" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+			<div class="logo">
+				<a href="#"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>				
+			</div>
+			<!-- MOBILE nav burgers -->
+			<button id="sidebarCollapse" class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#sidenav-content" aria-controls="sidenav-content" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-content" aria-controls="topnav-content" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- DESKTOP nav -->
 			<div id="topnav-content" class="collapse navbar-collapse">
-				<ul class="navbar-nav mr-auto">
+				<ul class="navbar-nav"><!-- mr-auto -->
 					<li class="nav-item active">
-						<a class="nav-link" href="#">TOPhome <span class="sr-only">(current)</span></a>
+						<a class="nav-link" href="#">Restore (inactive)</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">TOPlink1</a>
+						<a class="nav-link" href="#">Add</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Modify</a>
+					</li>
+<!-- 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						TOPdrop1
 						</a>
@@ -40,13 +47,10 @@
 							<div class="dropdown-divider"></div>
 							<a class="dropdown-item" href="#">TOPdropSUB3</a>
 						</div>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link disabled" href="#">Disabled</a>
-					</li>
+					</li> -->
 				</ul>
 				<!-- topnav SEARCH -->
-				<form class="form-inline my-2 my-lg-0">
+				<form class="form-inline ml-auto"><!-- my-2 my-lg-0 -->
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 				</form>
@@ -55,37 +59,36 @@
 		<!-- Sidebar -->
 		<nav id="sidebar" class="pull-left">
 			<ul id="sidenav-content" class="list-unstyled components">
-
 				<li class="active">
-					<a href="#" class="spawn-card" target="1">Thing ONE</a>
+					<a href="#" class="spawn-card" title="1">Panel ONE</a> <span>(click us!)</span>
 				</li>
 				<li>
-					<a href="#" class="spawn-card" target="2">Thing TWO</a>
+					<a href="#" class="spawn-card" title="2">Panel TWO</a>
 				</li>
 				<li>
-					<a href="#" class="spawn-card" target="3">Thing THREE</a>
+					<a href="#" class="spawn-card" title="3">Panel THREE</a>
 				</li>
 				<li>
-					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" target="4">Thing FOUR</a>
+					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" title="4">Panel FOUR</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li>
-							<a href="#">sub4link1</a>
+							<a href="#">&bull;&nbsp;sub4link1</a>
 						</li>
 						<li>
-							<a href="#">sub4link2</a>
+							<a href="#">&bull;&nbsp;sub4link2</a>
 						</li>
 						<li>
-							<a href="#">sub4link3</a>
+							<a href="#">&bull;&nbsp;sub4link3</a>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</nav>
-		<div class="container card-section">
+		<div class="card-section">
 			<div class="row">
-				<div class="card" id="card2">
+				<div class="card" id="card1">
 					<div class="card-header">
-						Thing ONE
+						Panel ONE
 						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
 						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
@@ -93,9 +96,9 @@
 						ONE ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</div>
 				</div>
-				<div class="card" id="card3">
+				<div class="card" id="card2">
 					<div class="card-header">
-						Thing TWO
+						Panel TWO
 						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
 						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
@@ -103,9 +106,9 @@
 						TWO ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</div>
 				</div>
-				<div class="card" id="card4">
+				<div class="card" id="card3">
 					<div class="card-header">
-						Thing THREE
+						Panel THREE
 						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
 						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
@@ -113,9 +116,9 @@
 						THREE ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</div>
 				</div>
-				<div class="card">
+				<div class="card" id="card4">
 					<div class="card-header">
-						Thing FOUR
+						Panel FOUR
 						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
 						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>

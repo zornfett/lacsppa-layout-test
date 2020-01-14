@@ -14,6 +14,6 @@ $(function () {
 	// sidebar links spawn various cards
 	$('.spawn-card').on('click', function(){
 		console.log('booyah!');
-		$('#card' + $(this).attr('target')).show();
+		$('#card' + $(this).attr('title')).show();
 	})
 });
