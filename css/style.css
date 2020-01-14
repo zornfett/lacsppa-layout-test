@@ -93,14 +93,14 @@ a[data-toggle="collapse"] {
 	}
 
 	#sidebar.active {
+		width: 40%;
 		margin-left: 0;
 	}
 
 	.wrapper,
-	nav,
-	#sidebar,
+	.navbar,
 	.card-section {
-		outline: 2px dotted orange;
+		outline: 2px dotted #f00;
 	}
 }
 
