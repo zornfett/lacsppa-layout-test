@@ -20,23 +20,55 @@
 	<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
-	<div class="wrapper">
+	<aside class="left-panel">
+		<div class="logo">
+			<a href="/"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>				
+		</div>
+		<nav class="sidebar"><!-- pull-left -->
+			<ul id="sidenav-content" class="list-unstyled components">
+				<li><!-- class="active" -->
+					<a href="#" class="spawn-card" title="1">Panel ONE</a> <!-- <span>(click us!)</span> -->
+				</li>
+				<li>
+					<a href="#" class="spawn-card" title="2">Panel TWO</a>
+				</li>
+				<li>
+					<a href="#" class="spawn-card" title="3">Panel THREE</a>
+				</li>
+				<li>
+					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" title="4">Panel FOUR</a>
+					<ul class="collapse list-unstyled" id="homeSubmenu">
+						<li>
+							&bull;&nbsp;<a href="#">sub4link1</a>
+						</li>
+						<li>
+							&bull;&nbsp;<a href="#">sub4link2</a>
+						</li>
+						<li>
+							&bull;&nbsp;<a href="#">sub4link3</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</nav>	
+	</aside>
+	<section class="right-panel">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<div class="logo">
-				<a href="#"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>				
-			</div>
 			<!-- MOBILE nav burgers -->
 			<button id="sidebarCollapse" class="navbar-toggler pull-left" type="button" data-toggle="collapse" data-target="#sidenav-content" aria-controls="sidenav-content" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
+			<div class="logo">
+				<a href="/"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>				
+			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topnav-content" aria-controls="topnav-content" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<!-- DESKTOP nav -->
 			<div id="topnav-content" class="collapse navbar-collapse">
-				<ul class="navbar-nav"><!-- mr-auto -->
+				<ul class="navbar-nav">
 					<li class="nav-item active">
-						<a class="nav-link" href="#">Restore (inactive)</a>
+						<a class="nav-link" href="#">Restore<!--  (inactive) --></a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#">Add</a>
@@ -57,39 +89,11 @@
 					</li> -->
 				</ul>
 				<!-- topnav SEARCH -->
-				<form class="form-inline ml-auto"><!-- my-2 my-lg-0 -->
+				<form class="search form-inline ml-auto">
 					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 				</form>
 			</div>
-		</nav>
-		<!-- Sidebar -->
-		<nav id="sidebar" class="pull-left">
-			<ul id="sidenav-content" class="list-unstyled components">
-				<li class="active">
-					<a href="#" class="spawn-card" title="1">Panel ONE</a> <span>(click us!)</span>
-				</li>
-				<li>
-					<a href="#" class="spawn-card" title="2">Panel TWO</a>
-				</li>
-				<li>
-					<a href="#" class="spawn-card" title="3">Panel THREE</a>
-				</li>
-				<li>
-					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" title="4">Panel FOUR</a>
-					<ul class="collapse list-unstyled" id="homeSubmenu">
-						<li>
-							<a href="#">&bull;&nbsp;sub4link1</a>
-						</li>
-						<li>
-							<a href="#">&bull;&nbsp;sub4link2</a>
-						</li>
-						<li>
-							<a href="#">&bull;&nbsp;sub4link3</a>
-						</li>
-					</ul>
-				</li>
-			</ul>
 		</nav>
 		<div class="card-section">
 			<div class="row">
@@ -134,9 +138,12 @@
 					</div>
 				</div>
 			</div>
-		</div>	
-	</div>
-	<script src="js/jquery-1.10.2.min.js"></script>
+		</div>
+	</section>	
+	<script src="https://lanterman.org/js/vendor/modernizr-2.6.2.min.js"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<!-- <script src="js/jquery-1.10.2.min.js"></script> -->
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 	</body>

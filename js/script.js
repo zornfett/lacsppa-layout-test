@@ -1,7 +1,8 @@
 $(function () {
 	// show sidebar in mobile view
 	$('#sidebarCollapse').on('click', function(){
-		$('#sidebar').toggleClass('active');
+		console.log('sidebarCollapse');
+		$('.left-panel, .right-panel').toggleClass('deploy-left');
 	});
 	// close card butt
 	$('.close-icon').on('click',function(){

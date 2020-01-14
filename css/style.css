@@ -1,31 +1,34 @@
 .wrapper {
-	/*display: flex;
-	width: 100%;*/
 	align-items: stretch;
 }
 
-.navbar {
-	width: 100%;
-	padding-top: 0 !important;
+.left-panel {
+	display: table-cell;
+	background-color: #87b6de;
+	height: 100vh;
+	min-height: 100%;
+	padding: 0 25px;
+	vertical-align: top;
+	width: 280px;
+	transition: width .3s ease;
+
+	outline: 2px dotted green;
 }
 
-nav li span {
-	font-size: .5em;
+.logo img {
+	max-width: 225px;
+    height: auto;
 }
 
-a.nav-link {
-	color: #007bff !important;
-	font-size: 1em;
+.sidebar {
+
 }
 
-#sidebar {
-	width: 15%;
-	padding: 1em;
-	transition: all 0.3s;
-}
-
-#sidebar.active {
-	margin-left: -250px;
+.sidebar li a:link,
+.sidebar li a:active,
+.sidebar li a:visited,
+.sidebar li a:hover {
+	color: #fff;
 }
 
 button#sidebarCollapse {
@@ -49,12 +52,32 @@ a[data-toggle="collapse"] {
 	transform: translateY(-50%);
 }
 
-.logo img {
-	width: 60%;
+.right-panel {
+	display: table-cell;
+	width: 100%;
+
+	outline: 2px dotted blue;
+}
+
+.navbar {
+	width: 100%;
+}
+
+.navbar .logo  {
+	display: none;
+}
+
+nav li span {
+	font-size: .5em;
+}
+
+a.nav-link {
+	color: #007bff !important;
+	font-size: 1em;
 }
 
 .card-section {
-	/*width: 79%;*/
+
 }
 
 .card {
@@ -88,13 +111,52 @@ a[data-toggle="collapse"] {
 }
 
 @media (max-width: 768px) {
-	#sidebar {
-		margin-left: -250px;
+
+	.left-panel {
+
 	}
 
-	#sidebar.active {
-		width: 40%;
-		margin-left: 0;
+	aside.left-panel {
+		padding: 0;
+	}
+	.left-panel .logo,
+	.left-panel .sidebar  {
+		display: none;
+	}
+
+	.left-panel.deploy-left {
+		width: 15%;
+		/*margin-left: 0;*/
+		margin-left: -250px;
+		padding-top: 1em;
+		z-index: 100;
+		
+	}
+	.left-panel.deploy-left .sidebar {
+		display: block;
+		padding-left: .5em;
+	}
+	.left-panel.deploy-left .sidebar li a {
+		display: block;
+		text-align: right;
+		padding-right: 1em;
+	}
+	.right-panel.deploy-left {
+		width: 50%;
+	}
+
+	.right-panel .navbar {
+		padding: 0 .5em;
+	}
+
+	.right-panel .navbar .logo  {
+		display: block;
+	}
+
+	.right-panel .navbar .search {
+		position: absolute;
+		top: 40%;
+		right: 1%;
 	}
 
 	.card {
@@ -110,13 +172,11 @@ a[data-toggle="collapse"] {
 }
 
 /* !! dummy styles !! */
-.wrapper,
-.navbar,
-.card-section {
-	outline: 2px dotted #666;
+.left-panel{
+	
 }
-#sidebar {
-	border-right: 2px dotted #666;
+
+.right-panel {
+	
 }
-/*div { outline: 1px dotted green; }*/
 
