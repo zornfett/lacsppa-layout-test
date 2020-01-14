@@ -6,18 +6,23 @@
 
 .navbar {
 	width: 100%;
+	margin-top: 0 !important;
 }
 
 #sidebar {
-	float: left;
-	min-width: 20%;
-	max-width: 20%;
+	min-width: 24%;
+	max-width: 24%;
+	padding-left: .5em;
 
 	transition: all 0.3s;
 }
 
 #sidebar.active {
 	margin-left: -250px;
+}
+
+.dropdown-toggle::after {
+	right: -16px !important;
 }
 
 a[data-toggle="collapse"] {
@@ -31,12 +36,38 @@ a[data-toggle="collapse"] {
 	right: 20px;
 	transform: translateY(-50%);
 }
+.logo img {
+	width: 60%;
+}
+
 .card-section {
 	/*width: 79%;*/
 }
 .card {
-	width: 32%;
-	margin: 0 .5em .5em 0;
+	/*display: none;*/
+
+	width: 31%;
+	margin: 0 1em 1em 0;
+	border: none;
+}
+
+.card-header {
+	padding: 1em;
+	border: 1px solid #666;
+}
+
+.minimize-icon {
+	margin-right: .5em;
+}
+
+.card-body {
+	padding: .5em;
+	border: 1px solid #666;
+	border-top: none;
+}
+
+.close-icon {
+  cursor: pointer;
 }
 
 @media (max-width: 768px) {

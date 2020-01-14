@@ -7,13 +7,15 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description" content="">
 	<meta name="author" content="zornfett">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
+	<!-- <link href="css/font-awesome.min.css" rel="stylesheet"/> -->
 	<link href="css/bootstrap.min.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 	</head>
 	<body>
 	<div class="wrapper">
 		<nav class="navbar navbar-expand-lg navbar-light bg-light">
-			<a class="navbar-brand" href="#">Navbar</a>
+			<a href="#" class="logo"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>
             <!-- side-burger -->
             <button id="sidebarCollapse" class="btn btn-info navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-content" aria-controls="sidenav-content" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fas fa-align-left"></i>
@@ -51,79 +53,74 @@
 			</div>
 		</nav>
 		<!-- Sidebar -->
-		<nav id="sidebar">
+		<nav id="sidebar" class="pull-left">
 			<ul id="sidenav-content" class="list-unstyled components">
+
 				<li class="active">
-					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">sideHOME</a>
+					<a href="#" class="spawn-card" target="1">Thing ONE</a>
+				</li>
+				<li>
+					<a href="#" class="spawn-card" target="2">Thing TWO</a>
+				</li>
+				<li>
+					<a href="#" class="spawn-card" target="3">Thing THREE</a>
+				</li>
+				<li>
+					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" target="4">Thing FOUR</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li>
-							<a href="#">LINK1</a>
+							<a href="#">sub4link1</a>
 						</li>
 						<li>
-							<a href="#">LINK2</a>
+							<a href="#">sub4link2</a>
 						</li>
 						<li>
-							<a href="#">LINK3</a>
+							<a href="#">sub4link3</a>
 						</li>
 					</ul>
-				</li>
-				<li>
-					<a href="#">sideLINK1</a>
-				</li>
-				<li>
-					<a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">sideLINK2</a>
-					<ul class="collapse list-unstyled" id="pageSubmenu">
-						<li>
-							<a href="#">XXX</a>
-						</li>
-						<li>
-							<a href="#">XXX</a>
-						</li>
-						<li>
-							<a href="#">XXX</a>
-						</li>
-					</ul>
-				</li>
-				<li>
-					<a href="#">sideLINK3</a>
-				</li>
-				<li>
-					<a href="#">sideLINK4</a>
 				</li>
 			</ul>
 		</nav>
-		<div class="container card-section" style="outline: 1px dotted red;">
+		<div class="container card-section">
 			<div class="row">
-				<div class="card">
+				<div class="card" id="card2">
 					<div class="card-header">
-						cardheader
+						Thing ONE
+						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
+						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
 					<div class="card-body">
-						cardbody
+						ONE ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					</div>
+				</div>
+				<div class="card" id="card3">
+					<div class="card-header">
+						Thing TWO
+						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
+						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
+					</div>
+					<div class="card-body" id="card1">
+						TWO ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					</div>
+				</div>
+				<div class="card" id="card4">
+					<div class="card-header">
+						Thing THREE
+						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
+						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
+					</div>
+					<div class="card-body">
+						THREE ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</div>
 				</div>
 				<div class="card">
 					<div class="card-header">
-						cardheader
+						Thing FOUR
+						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
+						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
 					<div class="card-body">
-						cardbody
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header">
-						cardheader
-					</div>
-					<div class="card-body">
-						cardbody
-					</div>
-				</div>
-				<div class="card">
-					<div class="card-header">
-						cardheader
-					</div>
-					<div class="card-body">
-						cardbody
+						FOUR ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
 					</div>
 				</div>
 			</div>
@@ -134,77 +131,3 @@
 	<script src="js/script.js"></script>
 	</body>
 </html>
-
-<!-- 
-NOTES ::
-- style table via CSS GRID? 
-https://adamlynch.com/flexible-data-tables-with-css-grid/
-https://getbootstrap.com/docs/4.4/layout/grid/
-
-https://getbootstrap.com/docs/4.0/content/tables/
-- https://getbootstrap.com/docs/4.4/layout/grid/#grid-tiers
-- https://getbootstrap.com/docs/4.4/content/reboot/
-
-- XXX
-
-
-<table class="table table-striped"><!-- table-bordered
-	<thead class="thead-dark">
-		<tr>
-			<th scope="col">TKheaderTKT</th>
-			<th scope="col">TKTKT</th>
-			<th scope="col">TKTKT</th>
-			<th scope="col">TKTKT</th>
-		</tr>
-	</thead>
-		<tbody class="XXX">
-		<tr>
-			<th scope="col">TKbodyTKT</td>
-			<td scope="col">TKTKT</td>
-			<td scope="col">TKTKT</th>
-			<td scope="col">TKTKT</td>
-		</tr>
-	</tbody>
-	<tbody class="XXX">
-		<tr>
-			<th scope="col">TKTKT</td>
-			<td scope="col">TKTKT</td>
-			<td scope="col">TKTKT</th>
-			<td scope="col">TKTKT</td>
-		</tr>
-	</tbody>
-	<tbody class="XXX">
-		<tr>
-			<th scope="col">TKTKT</td>
-			<td scope="col">TKTKT</td>
-			<td scope="col">TKTKT</th>
-			<td scope="col">TKTKT</td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<th scope="row">TKbodyTKT</td>
-			<td>TKTKT</td>
-			<td>TKTKT</td>
-			<td>TKTKT</td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<th scope="row">scope="row"</td>
-			<td>TKTKT</td>
-			<td>TKTKT</td>
-			<td>TKTKT</td>
-		</tr>
-	</tbody>
-	<tbody>
-		<tr>
-			<th scope="row">TKTKT</td>
-			<td>TKTKT</td>
-			<td>TKTKT</td>
-			<td>TKTKT</td>
-		</tr>
-	</tbody>	
-</table>
-
- -->
