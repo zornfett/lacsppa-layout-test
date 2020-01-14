@@ -11,17 +11,11 @@
 	vertical-align: top;
 	width: 280px;
 	transition: width .3s ease;
-
-	outline: 2px dotted green;
 }
 
 .logo img {
 	max-width: 225px;
     height: auto;
-}
-
-.sidebar {
-
 }
 
 .sidebar li a:link,
@@ -55,8 +49,6 @@ a[data-toggle="collapse"] {
 .right-panel {
 	display: table-cell;
 	width: 100%;
-
-	outline: 2px dotted blue;
 }
 
 .navbar {
@@ -74,10 +66,6 @@ nav li span {
 a.nav-link {
 	color: #007bff !important;
 	font-size: 1em;
-}
-
-.card-section {
-
 }
 
 .card {
@@ -103,44 +91,48 @@ a.nav-link {
 }
 
 .close-icon {
-  cursor: pointer;
+	cursor: pointer;
 }
 
 .visible {
 	display: block;
 }
 
-@media (max-width: 768px) {
+@media screen and (min-width: 769px) and (max-width:993px) {
 
-	.left-panel {
-
+	.right-panel #sidebarCollapse {
+		display: none;
 	}
+}
+@media (max-width: 768px) {
 
 	aside.left-panel {
 		padding: 0;
 	}
+
 	.left-panel .logo,
 	.left-panel .sidebar  {
 		display: none;
 	}
 
 	.left-panel.deploy-left {
-		width: 15%;
-		/*margin-left: 0;*/
+		width: 25%;
 		margin-left: -250px;
 		padding-top: 1em;
-		z-index: 100;
-		
+		/*z-index: 100;*/
 	}
+
 	.left-panel.deploy-left .sidebar {
 		display: block;
 		padding-left: .5em;
 	}
+
 	.left-panel.deploy-left .sidebar li a {
 		display: block;
 		text-align: right;
 		padding-right: 1em;
 	}
+
 	.right-panel.deploy-left {
 		width: 50%;
 	}
@@ -153,30 +145,43 @@ a.nav-link {
 		display: block;
 	}
 
-	.right-panel .navbar .search {
-		position: absolute;
-		top: 40%;
-		right: 1%;
+	.right-panel .navbar .logo img {
+		max-width: 50px;
 	}
+
+	.right-panel .navbar .navbar-nav {
+		margin-bottom: 1em;
+		padding-right: .5em;
+	}
+
+	.right-panel .navbar .navbar-nav li a {
+		text-align: right;
+	}
+
+	.right-panel .navbar .search {
+		margin-bottom: .5em;
+	}
+
+	.right-panel .navbar .search button {
+		display: block;
+		margin: 0 auto;
+	}
+
+	.right-panel .navbar .form-inline .form-control {
+		width: 100%;
+		margin-bottom: .5em;
+	}	
 
 	.card {
-		width: 100%;
-		margin-right: 0;
-	}
-
-	.wrapper,
-	.navbar,
-	.card-section {
-		outline: 2px dotted #f00;
+		width: 85%;
+		margin: 0 auto;
 	}
 }
 
-/* !! dummy styles !! */
-.left-panel{
-	
+/* !! dummy styles !!
+.wrapper,
+.navbar,
+.card-section {
+	outline: 2px dotted #f00;
 }
-
-.right-panel {
-	
-}
-
+ */
