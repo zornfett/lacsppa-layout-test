@@ -53,6 +53,7 @@ a[data-toggle="collapse"] {
 
 .navbar {
 	width: 100%;
+	margin-bottom: 1em;
 }
 
 .navbar .logo  {
@@ -66,6 +67,10 @@ nav li span {
 a.nav-link {
 	color: #007bff !important;
 	font-size: 1em;
+}
+
+.card-section .row {
+	margin-left: 1em;
 }
 
 .card {
