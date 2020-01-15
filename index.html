@@ -24,19 +24,19 @@
 		<div class="logo">
 			<a href="/"><img src="https://lanterman.org/img/logo-lanterman.png" alt="TKTKTK"></a>				
 		</div>
-		<nav class="sidebar"><!-- pull-left -->
+		<nav class="sidebar">
 			<ul id="sidenav-content" class="list-unstyled components">
 				<li><!-- class="active" -->
-					<a href="#" class="spawn-card" title="1">Panel ONE</a> <!-- <span>(click us!)</span> -->
+					<a href="#" class="spawn-card" title="1">Panel ONE</a>
 				</li>
 				<li>
-					<a href="#" class="spawn-card" title="2">Panel TWO</a>
+					<a href="#" class="spawn-card" title="2">FORM Panel</a>
 				</li>
 				<li>
 					<a href="#" class="spawn-card" title="3">Panel THREE</a>
 				</li>
 				<li>
-					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" title="4">Panel FOUR</a>
+					<a href="#homeSubmenu" class="spawn-card" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle" title="4">COPY Panel</a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
 						<li>
 							&bull;&nbsp;<a href="#">sub4link1</a>
@@ -109,12 +109,29 @@
 				</div>
 				<div class="card" id="card2">
 					<div class="card-header">
-						Panel TWO
+						FORM Panel
 						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
 						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
-					<div class="card-body" id="card1">
-						TWO ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+					<div class="card-body card-block">
+						<div class="form-group">
+							<label for="company" class=" form-control-label">Company</label><input type="text" id="company" placeholder="Enter your company name" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="vat" class=" form-control-label">VAT</label><input type="text" id="vat" placeholder="DE1234567890" class="form-control">
+						</div>
+						<div class="form-group">
+							<label for="street" class=" form-control-label">Street</label><input type="text" id="street" placeholder="Enter street name" class="form-control">
+						</div>
+						<div class="form-group">
+								<div class="form-group"><label for="city" class=" form-control-label">City</label><input type="text" id="city" placeholder="Enter your city" class="form-control"></div>
+								<div class="form-group">
+									<label for="postal-code" class=" form-control-label">Postal Code</label><input type="text" id="postal-code" placeholder="Postal Code" class="form-control">
+								</div>
+						</div>
+						<div class="form-group">
+							<label for="country" class=" form-control-label">Country</label><input type="text" id="country" placeholder="Country name" class="form-control">
+						</div>
 					</div>
 				</div>
 				<div class="card" id="card3">
@@ -129,7 +146,7 @@
 				</div>
 				<div class="card" id="card4">
 					<div class="card-header">
-						Panel FOUR
+						COPY Panel
 						<span class="pull-right close-icon"><i class="fa fa-times"></i></span>
 						<span class="pull-right minimize-icon"><i class="fa fa-window-minimize"></i></span>
 					</div>
@@ -141,9 +158,7 @@
 		</div>
 	</section>	
 	<script src="https://lanterman.org/js/vendor/modernizr-2.6.2.min.js"></script>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<!-- <script src="js/jquery-1.10.2.min.js"></script> -->
+	<script src="js/jquery-1.10.2.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/script.js"></script>
 	</body>

@@ -182,6 +182,13 @@ a.nav-link {
 		width: 85%;
 		margin: 0 auto 1em auto;
 	}
+
+	#card2 .form-panel {
+		margin-bottom: 1em;
+	}
+	#card2 label {
+		margin-bottom: 0;
+	}
 }
 
 /* !! dummy styles !!
