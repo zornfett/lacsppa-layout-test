@@ -13,9 +13,13 @@
 	transition: width .3s ease;
 }
 
+.logo {
+	margin-bottom: 2em;
+}
+
 .logo img {
 	max-width: 225px;
-    height: auto;
+	height: auto;
 }
 
 .sidebar li a:link,
@@ -23,6 +27,15 @@
 .sidebar li a:visited,
 .sidebar li a:hover {
 	color: #fff;
+}
+
+.sidebar li {
+	margin-bottom: .5em;
+}
+
+.sidebar #homeSubmenu li {
+	margin-bottom: 0;
+	padding-left: 1em;
 }
 
 button#sidebarCollapse {
@@ -93,6 +106,28 @@ a.nav-link {
 	padding: .5em;
 	border: 1px solid #666;
 	border-top: none;
+}
+
+.card.chart .card-body {
+		padding: 0;
+}
+
+.card.chart .card-body iframe {
+	width: 300px;
+	height: 230px;
+}
+
+.card.table .card-body {
+	padding: 0;
+}
+
+.card.table .card-body table {
+	margin-bottom: 0;
+}
+
+.card.table th,
+.card.table  td {
+	padding: .5em !important;
 }
 
 .close-icon {
@@ -177,6 +212,10 @@ a.nav-link {
 		width: 100%;
 		margin-bottom: .5em;
 	}	
+
+	.card-section .row {
+		margin-left: .5em;
+	}
 
 	.card {
 		width: 85%;
